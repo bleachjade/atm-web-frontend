@@ -4,5 +4,5 @@ COPY pom.xml .
 RUN mvn dependency:resolve
 COPY src ./src
 RUN mvn compile
-EXPOSE 8080
+EXPOSE 8090
 CMD ["mvn","spring-boot:run"]
